@@ -1,0 +1,3 @@
+C:\Users\sd674\Documents\medicine_manager\myenv\Lib\site-packages\torch\utils\data\dataloader.py:665: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  warnings.warn(warn_msg)
+[([[np.int32(272), np.int32(164)], [np.int32(382), np.int32(164)], [np.int32(382), np.int32(220)], [np.int32(272), np.int32(220)]], 'MY FREE', np.float64(0.5572274364903623)), ([[np.int32(243), np.int32(219)], [np.int32(385), np.int32(219)], [np.int32(385), np.int32(281)], [np.int32(243), np.int32(281)]], 'NOTE BOOK', np.float64(0.9152095575744243)), ([[np.int32(209), np.int32(281)], [np.int32(387), np.int32(281)], [np.int32(387), np.int32(341)], [np.int32(209), np.int32(341)]], 'ITS UP TO ME', np.float64(0.8293278591997622))]
