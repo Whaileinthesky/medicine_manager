@@ -35,6 +35,9 @@ while True:
         # 텍스트 출력
         cv2.putText(frame, text, (top_left[0], top_left[1] - 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
+        #debug
+        print(top_left[0], top_left[1] - 10)
+
     # OCR 결과를 화면에 띄우기
     cv2.imshow("OCR Result", frame)
 

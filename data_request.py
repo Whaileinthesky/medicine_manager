@@ -6,14 +6,13 @@ with open("config.yaml", "r", encoding='UTF-8') as f:
 
 api_key = cfg.get("DECODING_KEY")
 
-
 url = 'http://apis.data.go.kr/1471000/DrbEasyDrugInfoService/getDrbEasyDrugList'
 
 params ={'serviceKey' : api_key, 
          'pageNo' : '1', 
-         'numOfRows' : '3',
-         'type' : 'json',
-         'itemname' : '타이레놀콜드-에스정'
+         'numOfRows' : '10',
+         'itemName' : '타이레놀',
+         'type' : 'json'
          }
 
 resp = requests.get(url, params=params)
