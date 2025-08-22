@@ -85,13 +85,14 @@ while True:
 
 
 #api와 통신할 url
-url = 'http://apis.data.go.kr/1471000/DrbEasyDrugInfoService/getDrbEasyDrugList'
+url = 'https://apis.data.go.kr/1471000/DURPrdlstInfoService03/getUsjntTabooInfoList03'
 
 params ={'serviceKey' : api_key, 
          'pageNo' : '1', 
          'numOfRows' : '3',
-         'type' : 'json',
-         'itemName' : item
+         'typeName' : '병용금기',
+         'itemName' : item,
+         'type' : 'json'
          }
 
 #API와 통신해서 받은 정보 저장
