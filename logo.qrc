@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+    <file>images/logo.png</file>
+    <file>images/dolphin.ai</file>
+    <file>images/kitel_logo.svg</file>
+</qresource>
+</RCC>

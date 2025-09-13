@@ -6,68 +6,60 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>480</height>
+    <width>1403</width>
+    <height>849</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="verticalLayoutWidget">
+   <widget class="QListView" name="my_medicines">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>341</width>
-      <height>191</height>
+      <x>750</x>
+      <y>300</y>
+      <width>461</width>
+      <height>171</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout"/>
-   </widget>
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>210</y>
-      <width>301</width>
-      <height>221</height>
-     </rect>
+    <property name="dragEnabled">
+     <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="camera">
+   <widget class="QPushButton" name="quit">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>10</y>
-      <width>81</width>
-      <height>71</height>
+      <x>1230</x>
+      <y>160</y>
+      <width>151</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="text">
-     <string>CAMERA</string>
+     <string>QUIT</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Save_Button">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>90</y>
-      <width>81</width>
-      <height>71</height>
+      <x>1230</x>
+      <y>20</y>
+      <width>151</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="text">
      <string>SAVE</string>
     </property>
    </widget>
-   <widget class="QScrollArea" name="scrollArea">
+   <widget class="QScrollArea" name="DUR_data_box">
     <property name="geometry">
      <rect>
-      <x>329</x>
-      <y>209</y>
-      <width>301</width>
-      <height>221</height>
+      <x>20</x>
+      <y>530</y>
+      <width>1361</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="widgetResizable">
@@ -78,11 +70,175 @@
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>299</width>
-       <height>219</height>
+       <width>1359</width>
+       <height>269</height>
       </rect>
      </property>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>성분명</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>0</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>부작용</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>10</y>
+        <width>108</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="DUR_data_table">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>1321</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>50</y>
+      <width>461</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="current_text_box">
+     <item>
+      <widget class="QLabel" name="current_text">
+       <property name="text">
+        <string>약 이름이 여기 나타납니다.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="margin">
+        <number>16</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>15</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Current Text</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Camera View</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DUR 검색 결과</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>260</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>현재 복용중인 약</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>49</y>
+      <width>691</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="camera_frame">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>310</y>
+      <width>151</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/images/logo.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -90,13 +246,21 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>640</width>
+     <width>1403</width>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuMedicine_Manager">
+    <property name="title">
+     <string>Medicine Manager</string>
+    </property>
+   </widget>
+   <addaction name="menuMedicine_Manager"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
