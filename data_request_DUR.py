@@ -12,7 +12,7 @@ params ={'serviceKey' : api_key,
          'pageNo' : '1', 
          'numOfRows' : '3',
          'typeName' : '병용금기',
-         'itemName' : '독시메디정',
+         'itemName' : '',
          'type' : 'json'
          }
 
