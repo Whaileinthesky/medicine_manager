@@ -219,6 +219,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = MainWindow(cam_index=0, gpu=True)
-    window.setWindowTitle("Medicine Interaction Checker")
+    window.setWindowTitle("Medicine Manager")
     window.show()
     sys.exit(app.exec())
